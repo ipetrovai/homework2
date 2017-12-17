@@ -49,11 +49,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewCars.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NewCars.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/NewCars.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -84,6 +94,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Cars.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dealership.java" />
         <option value="$PROJECT_DIR$/src/main/java/NewCars.java" />
+        <option value="$PROJECT_DIR$/gitignore" />
       </list>
     </option>
   </component>
@@ -620,12 +631,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512568414055</updated>
       <workItem from="1512568417686" duration="1110000" />
-      <workItem from="1513543931487" duration="1371000" />
+      <workItem from="1513543931487" duration="1544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2481000" />
+    <option name="totallyTimeSpent" value="2654000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="286" y="0" width="1206" height="1047" extended-state="0" />
@@ -838,6 +849,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
