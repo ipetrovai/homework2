@@ -8,25 +8,30 @@ public class Dealership
     public static void main(String[] args)
     {
         ArrayList<Cars> oldCars = new ArrayList<Cars>();
-        oldCars.add(new Cars("Audi","A5", 2010,13000 ));
-        oldCars.add(new Cars("Nissan","Skyline", 2012,9000 ));
-        oldCars.add(new Cars("BMW","X5", 2011,12400 ));
-        oldCars.add(new Cars("Mercedes","S-Class", 2010,15000 ));
+        Cars c1 = new Cars("Audi","A6",2016,45000);
+        Cars c2 = new Cars("Audi","A4",2015,22000);
+        Cars c3 = new Cars("Bmw","X5",2015,34000);
+        Cars c4 = new Cars("Bmw","X6",2012,50000);
+        Cars c5 = new Cars("Mercedes","S-Class",2016,80000);
+        Cars c6 = new Cars("Maseratti","Quattroporte",2016,120000);
 
-        ArrayList<Cars> newCars = new ArrayList<Cars>();
-        newCars.add(new NewCars("Bmw","i3",2017,230,40000));
-        newCars.add(new NewCars("Volkswagen","e-Up",2017,230,25000));
-        newCars.add(new NewCars("Volkswagen","e-Golf",2017,230,38000));
-        newCars.add(new NewCars("Kia","Soul",2017,230,34000));
+        oldCars.add(c1);
+        oldCars.add(c2);
+        oldCars.add(c3);
+        oldCars.add(c4);
+        oldCars.add(c5);
+        oldCars.add(c6);
 
-        for(Cars cars: oldCars){
-            System.out.println(cars);
-        }
+        System.out.println(oldCars);
 
-        System.out.println(" ");
+        ArrayList<NewCars> newcars = new ArrayList<NewCars>();
+        Cars nc1 = new NewCars("Volkswagen","E-Up",2017,1900,38000,true);
+        Cars nc2 = new NewCars("Renault","Zoe",2017,1800,33000,true);
+        Cars nc3 = new NewCars("Bmw","I3",2017,1800,40000,true);
+        Cars nc4 = new NewCars("Smart","FourFour",2017,1850,22700,true);
+        Cars nc5 = new NewCars("Kia","Soul",2017,1680,34000,true);
+        Cars nc6 = new NewCars("Hyundai","Ioniq",2017,1900,38000,true);
 
-        for(Cars Newcars: newCars){
-            System.out.println(Newcars);
-        }
+        System.out.println(newcars);
     }
 }

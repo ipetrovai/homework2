@@ -55,8 +55,8 @@ public class Cars
     public String toString() {
         return  manufacturer +" "+
                 model +" "
-                +year+
-                price
+                +year+" "
+                +price
                 ;
     }
 }

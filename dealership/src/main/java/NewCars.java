@@ -3,19 +3,34 @@
  */
 public class NewCars extends Cars {
     private int EnergyConsumtion;
+    private boolean FastCharging;
 
-    public NewCars(String manufacturer, String model, int year, int energyConsumtion, int price) {
+    public NewCars(String manufacturer, String model, int year, int energyConsumtion, int price, boolean fastCharging) {
         super(manufacturer, model, year, price);
         EnergyConsumtion = 2000;
     }
 
+    public int getEnergyConsumtion() {
+        return EnergyConsumtion;
+    }
+
+    public void setEnergyConsumtion(int energyConsumtion) {
+        EnergyConsumtion = energyConsumtion;
+    }
+
+    public boolean isFastCharging() {
+        return FastCharging;
+    }
+
+    public void setFastCharging(boolean fastCharging) {
+        FastCharging = fastCharging;
+    }
+
     @Override
     public String toString() {
-        return  "Manufacturer-"+""+getManufacturer()+" "
-                +"Model-"+getModel()+" "
-                +"year-"+""+getYear()+" "
-                +"Price="+""+getPrice()+" "
-                +"EnergyConsumtion=" + EnergyConsumtion
-                ;
+        return "NewCars{" +
+                "EnergyConsumtion=" + EnergyConsumtion +
+                ", FastCharging=" + FastCharging +
+                '}';
     }
 }
