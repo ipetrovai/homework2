@@ -1,13 +1,13 @@
 /**
  * Created by Ionut on 17.12.2017.
  */
-public class NewCars extends Cars {
+public class ElectricCars extends Cars {
     private int EnergyConsumtion;
     private boolean FastCharging;
 
-    public NewCars(String manufacturer, String model, int year, int energyConsumtion, int price, boolean fastCharging) {
+    public ElectricCars(String manufacturer, String model, int year, int energyConsumtion, int price, boolean fastCharging) {
         super(manufacturer, model, year, price);
-        EnergyConsumtion = 2000;
+
     }
 
     public int getEnergyConsumtion() {
@@ -28,7 +28,7 @@ public class NewCars extends Cars {
 
     @Override
     public String toString() {
-        return "NewCars{" +
+        return "ElectricCars{" +
                 "EnergyConsumtion=" + EnergyConsumtion +
                 ", FastCharging=" + FastCharging +
                 '}';

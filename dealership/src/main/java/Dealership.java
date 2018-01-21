@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -5,8 +6,10 @@ import java.util.ArrayList;
  */
 public class Dealership
 {
-    public static void main(String[] args)
+    public static void main(String[] args) throws IOException
     {
+        CarsCSVWriter writer = new CarsCSVWriter();
+
         ArrayList<Cars> oldCars = new ArrayList<Cars>();
         Cars c1 = new Cars("Audi","A6",2016,45000);
         Cars c2 = new Cars("Audi","A4",2015,22000);
@@ -22,16 +25,31 @@ public class Dealership
         oldCars.add(c5);
         oldCars.add(c6);
 
-        System.out.println(oldCars);
+        CarsCSV olcars = new CarsCSV();
+        olcars.writing(oldCars);
 
-        ArrayList<NewCars> newcars = new ArrayList<NewCars>();
-        Cars nc1 = new NewCars("Volkswagen","E-Up",2017,1900,38000,true);
-        Cars nc2 = new NewCars("Renault","Zoe",2017,1800,33000,true);
-        Cars nc3 = new NewCars("Bmw","I3",2017,1800,40000,true);
-        Cars nc4 = new NewCars("Smart","FourFour",2017,1850,22700,true);
-        Cars nc5 = new NewCars("Kia","Soul",2017,1680,34000,true);
-        Cars nc6 = new NewCars("Hyundai","Ioniq",2017,1900,38000,true);
+        //System.out.println(oldCars);
 
-        System.out.println(newcars);
+        ElectricCarsCSVWriter writer2 = new ElectricCarsCSVWriter();
+
+        ArrayList<ElectricCars> electricCars = new ArrayList<ElectricCars>();
+        ElectricCars ec1 = new ElectricCars("Volkswagen","E-Up",2017,1900,38000,true);
+        ElectricCars ec2 = new ElectricCars("Renault","Zoe",2017,1800,33000,true);
+        ElectricCars ec3 = new ElectricCars("Bmw","I3",2017,1800,40000,true);
+        ElectricCars ec4 = new ElectricCars("Smart","FourFour",2017,1850,22700,true);
+        ElectricCars ec5 = new ElectricCars("Kia","Soul",2017,1680,34000,true);
+        ElectricCars ec6 = new ElectricCars("Hyundai","Ioniq",2017,1900,38000,true);
+
+        electricCars.add(ec1);
+        electricCars.add(ec2);
+        electricCars.add(ec3);
+        electricCars.add(ec4);
+        electricCars.add(ec5);
+        electricCars.add(ec6);
+
+        ElectricCarsCSV elcars = new ElectricCarsCSV();
+        elcars.writing2(electricCars);
+
+        //System.out.println(electricCars);
     }
 }
